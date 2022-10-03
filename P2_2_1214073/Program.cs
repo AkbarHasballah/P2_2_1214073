@@ -11,21 +11,22 @@ namespace P2_2_1214073
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Masukkan Gajih anda ! :");
-            int gajih = int.Parse(Console.ReadLine());
-            int tunjangan = (gajih * 20) / 100;
-            int bonus = (gajih * 15) / 15;
-            double pph = (gajih * 3.5) / 100;
-            double totalgajihkaryawan = (gajih + tunjangan + bonus);
-            double gajihbersih = (gajih + tunjangan + bonus) - pph;
+            Console.WriteLine("Masukan Gajih Mu : ");
+           double gajihkaryawan, tunjangan, bonus, ppha, totalgajihkaryawan,gajihbersih;
+           gajihkaryawan = Convert.ToDouble(Console.ReadLine());
+           tunjangan =(gajihkaryawan * 20) / 100;
+           bonus =(gajihkaryawan * 15) / 15;
+           ppha = (gajihkaryawan *3.5) / 100;
+           totalgajihkaryawan = gajihkaryawan + tunjangan + bonus;
+           gajihbersih = (gajihkaryawan + tunjangan + bonus) - ppha ;
 
-            Console.WriteLine("Gajih Pokok Karyawan Sebesar :" + gajih);
-            Console.WriteLine("Tunjangan 20% sebesar :" + tunjangan);
-            Console.WriteLine("Bonus kerja rodi dari Bos sebesar : " + bonus);
-            Console.WriteLine("PPH sebesar :" + pph);
-            Console.WriteLine("Total Gajih karyawan sebelum di potong PPH sebesar :" + totalgajihkaryawan);
-            Console.WriteLine("Gajih bersih karyawan sebesar :" + gajihbersih);
-            
+           Console.WriteLine("Gajih Pokok Karyawan Sebesar :" + gajihkaryawan);
+           Console.WriteLine("Tunjangan 20% sebesar :" + tunjangan);
+           Console.WriteLine("Bonus kerja rodi dari Bos sebesar : " + bonus);
+           Console.WriteLine("PPH sebesar :" + ppha);
+           Console.WriteLine("Total Gajih karyawan sebelum di potong PPH sebesar :" + totalgajihkaryawan);
+           Console.WriteLine("Gajih bersih karyawan sebesar :" + gajihbersih);
+           Console.ReadKey();
         }
     }
 }
